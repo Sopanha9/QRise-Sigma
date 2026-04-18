@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sopanha.qrisesigma.ui.home.HomeFragment"
+        android:label="Alarms">
+        <action
+            android:id="@+id/action_home_to_addAlarm"
+            app:destination="@id/addAlarmFragment" />
+        <action
+            android:id="@+id/action_home_to_qrView"
+            app:destination="@id/qrViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAlarmFragment"
+        android:name="com.sopanha.qrisesigma.ui.alarm.AddAlarmFragment"
+        android:label="Set Alarm" />
+
+    <fragment
+        android:id="@+id/qrViewFragment"
+        android:name="com.sopanha.qrisesigma.ui.qr.QRViewFragment"
+        android:label="QR Code">
+        <argument
+            android:name="QR_CONTENT"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="QR_BASE64"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="ALARM_LABEL"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+</navigation>

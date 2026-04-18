@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_dark">#0F0F14</color>
+    <color name="bg_card">#1A1A24</color>
+    <color name="bg_ring">#0A0A0F</color>
+
+    <!-- Accent -->
+    <color name="accent_purple">#7C4DFF</color>
+    <color name="accent_purple_light">#B47AFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F0F0F5</color>
+    <color name="text_secondary">#888899</color>
+
+    <!-- UI -->
+    <color name="border_color">#2A2A38</color>
+    <color name="switch_track">#3A2A5A</color>
+    <color name="error_red">#FF5252</color>
+
+    <!-- Material defaults -->
+    <color name="colorPrimary">#7C4DFF</color>
+    <color name="colorPrimaryDark">#5B35D5</color>
+    <color name="colorAccent">#7C4DFF</color>
+</resources>
