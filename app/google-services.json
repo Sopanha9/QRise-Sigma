@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "YOUR_PROJECT_NUMBER",
-    "project_id": "YOUR_PROJECT_ID",
-    "storage_bucket": "YOUR_PROJECT_ID.appspot.com"
+    "project_number": "1066453117701",
+    "project_id": "qrise-d9ed0",
+    "storage_bucket": "qrise-d9ed0.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:YOUR_PROJECT_NUMBER:android:PLACEHOLDER",
+        "mobilesdk_app_id": "1:1066453117701:android:cec65c45cf8fe1d819256c",
         "android_client_info": {
           "package_name": "com.sopanha.qrisesigma"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "YOUR_API_KEY"
+          "current_key": "AIzaSyASJ-wyaGdDZaBYC6OtNUQ2M4oeGVAHwjw"
         }
       ],
       "services": {
