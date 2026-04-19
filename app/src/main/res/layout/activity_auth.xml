@@ -11,33 +11,47 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="32dp">
+        android:paddingHorizontal="28dp"
+        android:paddingTop="64dp"
+        android:paddingBottom="40dp">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_alarm"
-            android:tint="@color/accent_purple"
-            android:layout_marginBottom="24dp" />
+        <!-- Icon circle -->
+        <FrameLayout
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="28dp">
+
+            <View
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:background="@drawable/bg_circle_purple" />
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_alarm"
+                android:tint="@android:color/white" />
+        </FrameLayout>
 
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome Back"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="6dp" />
 
         <TextView
             android:id="@+id/tv_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign in to QRise Sigma"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:textColor="@color/text_secondary"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="40dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_name"
@@ -45,8 +59,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Display Name"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="14dp"
             android:visibility="gone"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusBottomEnd="14dp"
             app:boxStrokeColor="@color/accent_purple"
             app:hintTextColor="@color/text_secondary">
 
@@ -63,7 +81,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="14dp"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusBottomEnd="14dp"
             app:boxStrokeColor="@color/accent_purple"
             app:hintTextColor="@color/text_secondary">
 
@@ -80,7 +102,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="28dp"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusBottomEnd="14dp"
             app:boxStrokeColor="@color/accent_purple"
             app:hintTextColor="@color/text_secondary"
             app:passwordToggleEnabled="true">
@@ -99,7 +125,9 @@
             android:layout_height="56dp"
             android:text="Sign In"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:backgroundTint="@color/accent_purple"
+            app:cornerRadius="16dp"
             android:layout_marginBottom="16dp" />
 
         <ProgressBar
@@ -116,6 +144,7 @@
             android:layout_height="wrap_content"
             android:text="Don't have an account? Sign up"
             android:textColor="@color/accent_purple"
+            android:textSize="14sp"
             android:padding="8dp" />
 
     </LinearLayout>
