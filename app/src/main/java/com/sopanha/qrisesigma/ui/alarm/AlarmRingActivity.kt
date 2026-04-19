@@ -72,6 +72,7 @@ class AlarmRingActivity : AppCompatActivity() {
         }
     }
 
+    @android.annotation.SuppressLint("MissingSuperCall")
     override fun onBackPressed() {
         // Block back — must scan QR to dismiss
     }

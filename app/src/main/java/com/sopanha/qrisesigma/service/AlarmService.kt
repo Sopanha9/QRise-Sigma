@@ -3,6 +3,7 @@ package com.sopanha.qrisesigma.service
 import android.app.*
 import android.content.Context
 import android.content.Intent
+import android.content.pm.ServiceInfo
 import android.media.AudioAttributes
 import android.media.RingtoneManager
 import android.os.*
@@ -45,7 +46,12 @@ class AlarmService : Service() {
 
         // Start foreground notification
         val notification = buildNotification(label)
-        startForeground(NOTIFICATION_ID, notification)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            // Use specialUse for Android 14 (API 34)
+            startForeground(NOTIFICATION_ID, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE)
+        } else {
+            startForeground(NOTIFICATION_ID, notification)
+        }
 
         // Vibrate
         startVibration()
